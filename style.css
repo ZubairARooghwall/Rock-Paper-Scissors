@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: antiquewhite;
+    font-family: Roboto, 'Segoe UI', Arial;
+}
+
 
 .container{
     height: 100vh;
@@ -14,18 +19,103 @@
     gap: 100px;
 }
 
+
+
+
 .buttons{
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 200px;
 }
 
 
 
 
 .btn{
+    transform: scale(2);
+    font-size: 50px;
     width: 100px;
     height: 100px;
     border-radius: 10px;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    box-shadow: 2px 2px black;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.btn:hover{
+    
+    transform: scale(2) translate(-5px, -5px);
+    box-shadow: 7px 7px black;
+
+}
+
+
+.btn:active{
+    transform: scale(2) translate(1px, 1px);
+    box-shadow: 0.5px 0.5px black;
+}
+
+
+
+
+
+
+.results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.computerAndUser{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    
+}
+
+
+.retry{
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.retry p{
+    font-size: 50px;
+
+}
+
+.try-again{
+    border: none;
+    width: 10vw;
+    height: 5vh;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: cornsilk;
+    box-shadow: 5px 5px 3px black;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.try-again:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 15px 3px black;
+}
+
+.try-again:active{
+    transform: translate(1px, 1px);
+    box-shadow: 2px 2px 3px black;
 }
