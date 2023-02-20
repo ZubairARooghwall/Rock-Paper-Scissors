@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+
+
+.btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
